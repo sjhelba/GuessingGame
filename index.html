@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+    <!-- Bootstrap and CSS here:-->
+    <link rel='stylesheet' type='text/css' href='bootstrap.css'>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+
+  </head>
+  <body>
+    
+      <div id='background-photo'>
+      </div>
+
+      <div id='app' class='center container-fluid'>
+        <div id='headers'>
+          <!-- Title and subtitles! -->
+          <h2 id='pretitle'>Come right up and play...</h2>
+          <h1 id='title'>The Guessing Game!</h1>
+          <h3 id='subtitle'>Go ahead: Try guessing a number between 1-100</h3>
+        </div>
+
+        <div id='main'>
+          <div id='input-parent'>
+            <!-- Player's guess input, and submit button -->
+                <input id= 'player-input' class= 'center' placeholder="?" maxlength='3' autofocus=autofocus></input>
+                <button id='submit' class="center btn btn-primary"><strong>Go!</strong></button>
+          </div>
+
+          <div id='guesses-list'>
+            <!-- unordered list of guesses -->
+            <ul id='guesses'>
+                <li class='guess'>-</li>
+                <li class='guess'>-</li>
+                <li class='guess'>-</li>
+                <li class='guess'>-</li>
+                <li class='guess'>-</li>
+            </ul>
+          </div>
+
+          <div id="menu-btns">
+            <!-- reset and hint buttons -->
+                <button id='reset' class="btn btn-primary">Reset</button>
+                <button id='hint' class="btn btn-primary">Hint</button>
+          </div>
+        </div>
+      </div>
+
+      <p class='lead center' id='hintOutput'></p>
+
+
+    <div id='footer' class='center container'>
+        <div class='row'>
+          <div class='col-sm-4'>
+            <img id='fs-logo' src='fa-logo@2x.png'></img>
+          </div>
+
+          <div class='col-sm-4'>
+            <h4> Project by Sara Jo Helba</h4>
+          </div>
+
+          <div class='col-sm-4'>
+            <img id='gh-logo' src='grace_hopper_academy.png'></img>
+          </div>
+        </div>
+    </div>
+    <script src="jquery.min.js"></script>
+    <script src="GuessingGame.js"></script>
+  </body>
+</html>

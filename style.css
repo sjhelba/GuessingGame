@@ -1,0 +1,136 @@
+  
+
+body {
+    background-image: url('ocean.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.center {
+    text-align: center;
+    }
+ul {
+        list-style: none;
+        padding: 0;
+    }
+img {
+        display: inline;
+        width: 180px;
+        height: 90px;
+    }
+
+#app{
+    margin: 50px;
+    border-radius: 20%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: rgba(221, 245, 244, 0.7);
+}
+#footer {
+    height: 12%;
+    width: 100%;
+    border-top: solid 2px #368992;
+    background-color: rgba(245, 245, 245, 0.81);
+    position: fixed;
+    bottom: 0;
+    color: #368992;
+        
+    }
+
+
+h1 {
+    font-size: 60px;
+    color: #f1b2aa;
+}
+
+h2 {
+    color: #928c8c;
+}
+h3{
+    color: slategray;
+}
+
+.lead {
+    color: #fff77e;
+    font-size: 18px;
+    background-color: rgba(54, 137, 146, 0.75);
+}
+
+
+#input-parent{
+    position:relative;
+    border-top:solid #368992;
+    margin: 2% auto 20px;
+}
+#player-input{
+    background-color: rgb(255, 253, 243);
+    color: slategray;
+    height: 125px;
+    width: 125px;
+    font-size: 54px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: 40px; 
+}
+
+#submit{
+    position: absolute;
+    background-color: #fff9a5;
+    color: #928c8c;
+    font-size: 17px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border-color:#fff77e;
+    left:54%;
+    top:77%;
+}
+#submit:hover{
+    background-color:#fff34a;;
+}
+#reset{
+    margin-top:40px;
+    background-color: #368992;
+    color: whitesmoke;
+    font-size: 15px;
+    border-color:#368992;
+}
+#reset:hover{   
+    background-color:#296e75;
+}
+
+#hint{
+    margin-top:40px;
+    background-color: #f1b2aa;
+    color: whitesmoke;
+    font-size: 15px;
+    border-color:#f1b2aa;
+}
+#hint:hover{
+    background-color: #f39d93;
+}
+#guesses-list{
+    margin-top: 75px;
+
+}
+.guess{
+    display: inline;
+    border: 2px solid #296e75;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 40px;
+    padding-left: 40px;
+    color: slategray;
+}
+h4:hover{
+    color:#34e0f3;
+}
+
+.row{
+    margin-top: 7px;
+}
