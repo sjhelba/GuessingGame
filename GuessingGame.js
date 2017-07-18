@@ -49,15 +49,15 @@ Game.prototype.checkGuess = function(){
             }
             var difference = this.difference();
             if (difference < 10) {
-                $('#title').text("But you\'re burning up!");
+                $('#title').text("You\'re getting so close you\'re burning up!");
                 return "You\'re burning up!";
             }
             else if (difference < 25) {
-                $('#title').text("But you\'re lukewarm!");
+                $('#title').text("You\'re getting lukewarm!");
                 return "You\'re lukewarm.";
             }
             else if (difference < 50) {
-                $('#title').text("Truth be told, you\'re a bit chilly!");
+                $('#title').text("Truth be told, you\'re getting a bit chilly!");
                 return "You\'re a bit chilly.";
             }
             else {
