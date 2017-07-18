@@ -36,7 +36,7 @@ Game.prototype.checkGuess = function(){
         if (this.pastGuesses.length>4){
             $('#pretitle').text("Oh no! All out of guesses!");
             $('#title').text("You Lose.");
-            $('#subtitle').text("Aw, shucks... But that's okay-- just press reset to try again!");
+            $('#subtitle').text("Aw, shucks... Turns out the answer was " +this.winningNumber+ "! But that's okay-- just press reset to try again!");
             //TURN OFF SUBMIT AND HINT:
             $('#hint, #submit').prop("disabled",true);
             return "You Lose.";
@@ -57,7 +57,7 @@ Game.prototype.checkGuess = function(){
                 return "You\'re lukewarm.";
             }
             else if (difference < 50) {
-                $('#title').text("Truth be told, you\'re getting a bit chilly!");
+                $('#title').text("You\'re a bit chilly!");
                 return "You\'re a bit chilly.";
             }
             else {
